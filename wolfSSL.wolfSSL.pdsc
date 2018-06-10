@@ -16,6 +16,9 @@
   </taxonomy>
 
   <releases>                                                                <!-- contains complete release history of available releases (put most recent first) -->
+    <release version="3.15.0" date="2018-06-08">
+      June/08/2018,  wolfSSL pack for wolfSSL 3.15.0
+    </release>
     <release version="3.14.0" date="2018-03-13">
       March/13/2018,  wolfSSL pack for wolfSSL 3.14.0
     </release>
@@ -56,7 +59,7 @@
     </condition>
   </conditions>
   <components>
-    <bundle Cbundle="wolfSSL" Cclass="wolfSSL" Cversion="3.14.0" >
+    <bundle Cbundle="wolfSSL" Cclass="wolfSSL" Cversion="3.15.0" >
       <description>wolfSSL: SSL/TLS and Crypt Library</description>
       <doc>wolfssl/wolfSSLManual-TableofContents.htm</doc>
       <component Cgroup="wolfSSL" Csub="Core" condition="wolfCrypt-Core">
@@ -66,7 +69,7 @@
         <files>
           <file category="doc" name="wolfssl/IDE/MDK5-ARM/Docs/wolfSSLManual-TableofContents.htm"/>
 
-          <file category="header" name="wolfssl/IDE/MDK5-ARM/Conf/user_settings.h" attr="config" version="3.14.0" />
+          <file category="header" name="wolfssl/IDE/MDK5-ARM/Conf/user_settings.h" attr="config" version="3.15.0" />
           
           <file category="include" name="wolfssl/IDE/MDK5-ARM/Inc/"/>
           <file category="include" name="wolfssl/"/>
@@ -89,7 +92,7 @@
         <files>
           <file category="doc" name="wolfssl/IDE/MDK5-ARM/Docs/wolfSSLManual-wolfCryptUsageReference.htm" />
 
-          <file category="header" name="wolfssl/IDE/MDK5-ARM/Conf/user_settings.h" attr="config" version="3.14.0" />
+          <file category="header" name="wolfssl/IDE/MDK5-ARM/Conf/user_settings.h" attr="config" version="3.15.0" />
           
           <file category="include" name="wolfssl/IDE/MDK5-ARM/Inc/"/>
           <file category="include" name="wolfssl/"/>
@@ -106,6 +109,7 @@
           <file category="source" name="wolfssl/wolfcrypt/src/coding.c" />
           <file category="source" name="wolfssl/wolfcrypt/src/compress.c" />
           <file category="source" name="wolfssl/wolfcrypt/src/cpuid.c" />
+          <file category="source" name="wolfssl/wolfcrypt/src/cryptodev.c" />
           <file category="source" name="wolfssl/wolfcrypt/src/curve25519.c" />
           <file category="source" name="wolfssl/wolfcrypt/src/des3.c" />
           <file category="source" name="wolfssl/wolfcrypt/src/dh.c" />
@@ -141,7 +145,6 @@
           <file category="source" name="wolfssl/wolfcrypt/src/sha3.c" />
           <file category="source" name="wolfssl/wolfcrypt/src/sha512.c" />
           <file category="source" name="wolfssl/wolfcrypt/src/signature.c" />
-          <file category="source" name="wolfssl/wolfcrypt/src/sp.c" />
           <file category="source" name="wolfssl/wolfcrypt/src/sp_int.c" />
           <file category="source" name="wolfssl/wolfcrypt/src/srp.c" />
           <file category="source" name="wolfssl/wolfcrypt/src/tfm.c" />
